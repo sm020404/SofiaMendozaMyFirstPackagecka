@@ -1,0 +1,15 @@
+---
+title: "My Awesome Analysis" 
+author: "Sofia Mendoza" 
+date: "4/20/2024" 
+output: html_document
+---
+
+This markdown file will do the analysis.
+```{r, fig.height=4, fig.width=6}
+library(MyFirstPackageSofiaMendoza) # load TestPackage, which includes MaxTemp data frame.
+library(ggplot2)
+
+ggplot(MaxTemp, aes(x=Date, y=MaxTemp)) + geom_line()
+```
+We see that the daily max temperature in Flagstaff varies quite a lot.
